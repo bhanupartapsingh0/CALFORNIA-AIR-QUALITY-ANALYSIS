@@ -1,0 +1,8 @@
+year,fire_name,acres_burned,peak_month,max_smoke_index,statewide_avg_wildfire_pm25,health_advisory_days
+2020,"August Complex & Creek Fire",4397809,9,9.8,86.7,64
+2021,"Dixie & Caldor Fires",2568941,8,8.9,80.1,42
+2022,"McKinney & Mosquito Fires",362455,9,6.4,61.6,16
+2023,"Smith River Complex (Wet Winter Year)",324917,8,4.8,49.7,16
+2024,"Park Fire & Southern CA Fires",1042000,8,8.4,76.4,24
+2025,"Late Summer Heatwave & Sierra Fires",650000,9,7.2,67.5,20
+2026,"Baseline Year (Early Fire Activity)",410000,7,5.5,54.9,17

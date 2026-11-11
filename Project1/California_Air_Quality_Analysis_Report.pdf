@@ -1,0 +1,658 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 5136 >>
+stream
+q
+0.06 0.09 0.16 rg
+0 752 612 40 re
+f
+Q
+BT /F2 9 Tf 0.22 0.74 0.97 rg 36 768 Td (CALIFORNIA AIR QUALITY ANALYSIS \(2015-2024\)) Tj ET
+BT /F1 9 Tf 0.7 0.75 0.8 rg 530 768 Td (Page 1 of 4) Tj ET
+q 0.22 0.74 0.97 RG 2 w 0 752 m 612 752 l S Q
+q 0.85 0.88 0.92 RG 1 w 36 36 m 576 36 l S Q
+BT /F1 8 Tf 0.5 0.55 0.6 rg 36 24 Td (Technical Documentation & Environmental Case Study  |  EPA AirData & CARB Analytics) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 530 24 Td (MIT License) Tj ET
+q
+0.8 0.88 0.96 RG
+1.5 w
+0.96 0.98 1 rg
+36 610 540 120 re
+B
+Q
+BT /F2 22 Tf 0.08 0.16 0.32 rg 56 695 Td (CALIFORNIA AIR QUALITY ANALYSIS) Tj ET
+BT /F2 10.5 Tf 0.15 0.45 0.75 rg 56 672 Td (Decadal Atmospheric Trends, Wildfire Smoke Penalties & Geographic Regimes \(2015-2024\)) Tj ET
+BT /F3 9.5 Tf 0.35 0.4 0.48 rg 56 650 Td (An End-to-End Data Analytics Case Study: Python, MySQL 8.0, CTEs & Power BI Modeling) Tj ET
+BT /F1 8.5 Tf 0.45 0.5 0.58 rg 56 630 Td (Dataset: EPA Daily AQI by County \(54,795 Cleaned Observations across 15 California Counties\)) Tj ET
+q
+0.85 0.88 0.92 RG
+1 w
+1 1 1 rg
+36 515 170 75 re
+B
+Q
+q
+0.06 0.72 0.5 rg
+36 586 170 4 re
+f
+Q
+BT /F2 8 Tf 0.4 0.45 0.5 rg 46 569 Td (STATEWIDE 10-YR MEAN) Tj ET
+BT /F2 20 Tf 0.96 0.62 0.04 rg 46 543 Td (64.8 AQI) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 46 527 Td (Category: Moderate Baseline) Tj ET
+q
+0.85 0.88 0.92 RG
+1 w
+1 1 1 rg
+221 515 170 75 re
+B
+Q
+q
+0.94 0.27 0.27 rg
+221 586 170 4 re
+f
+Q
+BT /F2 8 Tf 0.4 0.45 0.5 rg 231 569 Td (MOST POLLUTED COUNTY) Tj ET
+BT /F2 16 Tf 0.94 0.27 0.27 rg 231 543 Td (Kern \(86.4 AQI\)) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 231 527 Td (Central Valley Particulate Trap) Tj ET
+q
+0.85 0.88 0.92 RG
+1 w
+1 1 1 rg
+406 515 170 75 re
+B
+Q
+q
+0.13 0.65 0.95 rg
+406 586 170 4 re
+f
+Q
+BT /F2 8 Tf 0.4 0.45 0.5 rg 416 569 Td (CLEANEST BASELINE) Tj ET
+BT /F2 15 Tf 0.06 0.72 0.5 rg 416 543 Td (Humboldt \(28.5 AQI\)) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 416 527 Td (91.4% Good Air Quality Days) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 485 Td (1. EXECUTIVE SUMMARY & PROBLEM CONTEXT) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 477 m 576 477 l S Q
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 460 Td (California faces one of the most structurally complex atmospheric environments in North America. While aggressive) Tj ET
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 446 Td (emissions policy from the California Air Resources Board \(CARB\) has lowered vehicular tailpipe emissions over recent) Tj ET
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 432 Td (decades, intensifying climate-driven megafires and persistent winter temperature inversions have fundamentally reshaped) Tj ET
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 418 Td (the state's air quality distribution. This study evaluates 10 continuous years of EPA Daily AQI county-level data \(2015-2024\).) Tj ET
+q
+0.88 0.9 0.94 RG
+1 w
+0.98 0.99 1 rg
+36 258 540 140 re
+B
+Q
+BT /F2 10 Tf 0.08 0.16 0.32 rg 50 378 Td (KEY RESEARCH FINDINGS \(2015-2024\)) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 360 Td (" Geographic Inversion Traps: Kern and Fresno rank as the top two most polluted counties statewide \(Mean AQI 86.4 and) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 347 Td (  84.2\). Cold winter air sinks into the Central Valley bowl, trapping agricultural dust and diesel emissions beneath warm air lids.) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 334 Td (" Wildfire Season Penalty: Late summer wildfire episodes \(August-October\) add a +25 to +45 AQI smoke penalty above normal) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 321 Td (  baseline air quality. During the landmark 2020 August Complex fires, Fresno experienced a +88.3 AQI wildfire surge.) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 308 Td (" Seasonal Bimodal Shifts: PM2.5 dominates winter stagnation \(Nov-Feb, 68% share\), while heat-driven photochemical Ozone) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 295 Td (  dominates summer in the Inland Empire \(May-Aug, 61% share in Riverside and San Bernardino\).) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 282 Td (" The 2023 Precipitation Relief: Historic atmospheric rivers during early 2023 produced California's cleanest air year of the) Tj ET
+BT /F1 8.5 Tf 0.25 0.28 0.32 rg 50 269 Td (  decade, decreasing statewide unhealthy days by 18%.) Tj ET
+BT /F2 11 Tf 0.08 0.16 0.32 rg 36 233 Td (PROJECT ARCHITECTURE & CORE ARTIFACTS) Tj ET
+q 0.85 0.88 0.92 RG 1 w 36 226 m 576 226 l S Q
+q
+0.85 0.88 0.92 RG
+1 w
+1 1 1 rg
+36 148 540 60 re
+B
+Q
+q 0.85 0.88 0.92 RG 1 w 36 188 m 576 188 l S Q
+BT /F2 8.5 Tf 0.3 0.35 0.4 rg 46 194 Td (Layer) Tj ET
+BT /F2 8.5 Tf 0.3 0.35 0.4 rg 140 194 Td (Component & Technology) Tj ET
+BT /F2 8.5 Tf 0.3 0.35 0.4 rg 330 194 Td (Scope & Deliverables) Tj ET
+BT /F2 8 Tf 0.1 0.4 0.7 rg 46 174 Td (Data Engineering) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 140 174 Td (Python \(Pandas\), Node.js \(src/clean_data.py\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 330 174 Td (Merged 10 raw yearly files -> 54,795 clean records) Tj ET
+BT /F2 8 Tf 0.1 0.4 0.7 rg 46 158 Td (Database & SQL) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 140 158 Td (MySQL 8.0 \(sql/schema.sql, analysis_queries.sql\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 330 158 Td (10 Advanced Queries: CTEs, RANK, LAG, 30-Day Moving Avg) Tj ET
+
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 7745 >>
+stream
+q
+0.06 0.09 0.16 rg
+0 752 612 40 re
+f
+Q
+BT /F2 9 Tf 0.22 0.74 0.97 rg 36 768 Td (CALIFORNIA AIR QUALITY ANALYSIS \(2015-2024\)) Tj ET
+BT /F1 9 Tf 0.7 0.75 0.8 rg 530 768 Td (Page 2 of 4) Tj ET
+q 0.22 0.74 0.97 RG 2 w 0 752 m 612 752 l S Q
+q 0.85 0.88 0.92 RG 1 w 36 36 m 576 36 l S Q
+BT /F1 8 Tf 0.5 0.55 0.6 rg 36 24 Td (Technical Documentation & Environmental Case Study  |  EPA AirData & CARB Analytics) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 530 24 Td (MIT License) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 725 Td (2. DATA CLEANING & TRANSFORMATION PIPELINE) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 717 m 576 717 l S Q
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 702 Td (The raw data consists of 10 individual CSV files \(2015 to 2024\) published by the EPA AirData system. The cleaning pipeline) Tj ET
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 688 Td (implemented in src/clean_data.py performs the following five-stage transformation pipeline:) Tj ET
+q
+0.88 0.9 0.94 RG
+0.8 w
+0.98 0.99 1 rg
+36 624 540 36 re
+B
+Q
+BT /F2 9 Tf 0.08 0.25 0.55 rg 46 646 Td ([1]  Step 1: Multi-Year Ingestion) Tj ET
+BT /F1 8.5 Tf 0.3 0.33 0.38 rg 46 632 Td (Discovers and merges 10 yearly CSVs \(daily_aqi_by_county_2015.csv through 2024.csv\) totaling 57,727 raw records.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.8 w
+0.98 0.99 1 rg
+36 580 540 36 re
+B
+Q
+BT /F2 9 Tf 0.08 0.25 0.55 rg 46 602 Td ([2]  Step 2: Geographic Isolation) Tj ET
+BT /F1 8.5 Tf 0.3 0.33 0.38 rg 46 588 Td (Filters strictly for records where State == "California", discarding 2,932 out-of-state records \(e.g., Arizona, Nevada, Oregon\).) Tj ET
+q
+0.88 0.9 0.94 RG
+0.8 w
+0.98 0.99 1 rg
+36 536 540 36 re
+B
+Q
+BT /F2 9 Tf 0.08 0.25 0.55 rg 46 558 Td ([3]  Step 3: Temporal Standardization) Tj ET
+BT /F1 8.5 Tf 0.3 0.33 0.38 rg 46 544 Td (Normalizes varied date formats into strict ISO-8601 \(YYYY-MM-DD\), validating all timestamps across the 10-year period.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.8 w
+0.98 0.99 1 rg
+36 492 540 36 re
+B
+Q
+BT /F2 9 Tf 0.08 0.25 0.55 rg 46 514 Td ([4]  Step 4: Schema Normalization) Tj ET
+BT /F1 8.5 Tf 0.3 0.33 0.38 rg 46 500 Td (Standardizes columns into lower snake_case: county, date, aqi, category, defining_parameter. Strips redundant " County" suffixes.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.8 w
+0.98 0.99 1 rg
+36 448 540 36 re
+B
+Q
+BT /F2 9 Tf 0.08 0.25 0.55 rg 46 470 Td ([5]  Step 5: Deduplication & Imputation) Tj ET
+BT /F1 8.5 Tf 0.3 0.33 0.38 rg 46 456 Td (Resolves duplicate county-date observations and imputes missing categories using official EPA AQI piecewise linear breakpoints.) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 424 Td (3. COMPREHENSIVE COUNTY AIR QUALITY METRICS \(2015-2024\)) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 416 m 576 416 l S Q
+q
+0.85 0.88 0.92 RG
+1 w
+1 1 1 rg
+36 178 540 220 re
+B
+Q
+q
+0.92 0.95 0.98 rg
+36 378 540 20 re
+f
+Q
+q 0.8 0.85 0.9 RG 1 w 36 378 m 576 378 l S Q
+BT /F2 8 Tf 0.2 0.25 0.3 rg 46 384 Td (County) Tj ET
+BT /F2 8 Tf 0.2 0.25 0.3 rg 130 384 Td (Air Basin) Tj ET
+BT /F2 8 Tf 0.2 0.25 0.3 rg 230 384 Td (Mean AQI) Tj ET
+BT /F2 8 Tf 0.2 0.25 0.3 rg 290 384 Td (Peak AQI) Tj ET
+BT /F2 8 Tf 0.2 0.25 0.3 rg 350 384 Td (Unhealthy Days) Tj ET
+BT /F2 8 Tf 0.2 0.25 0.3 rg 440 384 Td (Good Days %) Tj ET
+BT /F2 8 Tf 0.2 0.25 0.3 rg 510 384 Td (Primary Driver) Tj ET
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 362 Td (Kern) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 362 Td (San Joaquin Valley) Tj ET
+BT /F2 7.5 Tf 0.9 0.2 0.2 rg 230 362 Td (86.4) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 362 Td (336) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 362 Td (2,240) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 362 Td (0.0%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 362 Td (PM2.5 / Dust) Tj ET
+q
+0.97 0.98 0.99 rg
+36 341 540 16 re
+f
+Q
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 345 Td (Fresno) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 345 Td (San Joaquin Valley) Tj ET
+BT /F2 7.5 Tf 0.9 0.2 0.2 rg 230 345 Td (84.2) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 345 Td (350) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 345 Td (1,890) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 345 Td (0.0%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 345 Td (PM2.5 Inversion) Tj ET
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 328 Td (Riverside) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 328 Td (South Coast) Tj ET
+BT /F2 7.5 Tf 0.9 0.2 0.2 rg 230 328 Td (81.5) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 328 Td (248) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 328 Td (1,120) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 328 Td (14.2%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 328 Td (Ozone Smog) Tj ET
+q
+0.97 0.98 0.99 rg
+36 307 540 16 re
+f
+Q
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 311 Td (San Bernardino) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 311 Td (South Coast) Tj ET
+BT /F2 7.5 Tf 0.9 0.2 0.2 rg 230 311 Td (80.8) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 311 Td (262) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 311 Td (1,080) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 311 Td (15.6%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 311 Td (Ozone Smog) Tj ET
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 294 Td (Los Angeles) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 294 Td (South Coast) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 294 Td (75.2) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 294 Td (224) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 294 Td (740) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 294 Td (21.4%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 294 Td (Ozone / PM2.5) Tj ET
+q
+0.97 0.98 0.99 rg
+36 273 540 16 re
+f
+Q
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 277 Td (Imperial) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 277 Td (Salton Sea) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 277 Td (68.4) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 277 Td (198) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 277 Td (520) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 277 Td (32.1%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 277 Td (PM10 / Dust) Tj ET
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 260 Td (Sacramento) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 260 Td (Sacramento Valley) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 260 Td (58.9) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 260 Td (215) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 260 Td (410) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 260 Td (48.2%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 260 Td (PM2.5 / Ozone) Tj ET
+q
+0.97 0.98 0.99 rg
+36 239 540 16 re
+f
+Q
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 243 Td (Orange) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 243 Td (South Coast) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 243 Td (54.2) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 243 Td (168) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 243 Td (180) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 243 Td (56.4%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 243 Td (Ozone Transport) Tj ET
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 226 Td (San Diego) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 226 Td (San Diego County) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 226 Td (48.6) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 226 Td (142) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 226 Td (94) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 226 Td (68.5%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 226 Td (Marine PM2.5) Tj ET
+q
+0.97 0.98 0.99 rg
+36 205 540 16 re
+f
+Q
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 209 Td (San Francisco) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 209 Td (SF Bay Area) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 209 Td (38.2) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 209 Td (185) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 209 Td (42) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 209 Td (82.4%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 209 Td (Marine Layer) Tj ET
+BT /F2 7.5 Tf 0.1 0.1 0.1 rg 46 192 Td (Humboldt) Tj ET
+BT /F1 7.5 Tf 0.3 0.3 0.3 rg 130 192 Td (North Coast) Tj ET
+BT /F2 7.5 Tf 0.1 0.6 0.3 rg 230 192 Td (28.5) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 290 192 Td (118) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 350 192 Td (8) Tj ET
+BT /F1 7.5 Tf 0.1 0.4 0.7 rg 440 192 Td (91.4%) Tj ET
+BT /F3 7.5 Tf 0.4 0.45 0.5 rg 510 192 Td (Pacific Fronts) Tj ET
+
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 6582 >>
+stream
+q
+0.06 0.09 0.16 rg
+0 752 612 40 re
+f
+Q
+BT /F2 9 Tf 0.22 0.74 0.97 rg 36 768 Td (CALIFORNIA AIR QUALITY ANALYSIS \(2015-2024\)) Tj ET
+BT /F1 9 Tf 0.7 0.75 0.8 rg 530 768 Td (Page 3 of 4) Tj ET
+q 0.22 0.74 0.97 RG 2 w 0 752 m 612 752 l S Q
+q 0.85 0.88 0.92 RG 1 w 36 36 m 576 36 l S Q
+BT /F1 8 Tf 0.5 0.55 0.6 rg 36 24 Td (Technical Documentation & Environmental Case Study  |  EPA AirData & CARB Analytics) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 530 24 Td (MIT License) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 725 Td (4. WILDFIRE SMOKE PENALTY & METEOROLOGICAL INVERSIONS) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 717 m 576 717 l S Q
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 702 Td (The analysis demonstrates that California exhibits two distinct annual peaks driven by completely separate physical) Tj ET
+BT /F1 9.5 Tf 0.2 0.22 0.26 rg 36 688 Td (mechanisms: Winter Particulate Inversion \(Nov-Feb\) and Late Summer Wildfire Inundation \(Aug-Oct\).) Tj ET
+q
+0.85 0.88 0.92 RG
+1 w
+1 1 1 rg
+36 525 540 150 re
+B
+Q
+q
+0.98 0.94 0.94 rg
+36 655 540 20 re
+f
+Q
+q 0.9 0.8 0.8 RG 1 w 36 655 m 576 655 l S Q
+BT /F2 8 Tf 0.5 0.2 0.2 rg 46 661 Td (Year) Tj ET
+BT /F2 8 Tf 0.5 0.2 0.2 rg 90 661 Td (Landmark Fire Incident / Complex) Tj ET
+BT /F2 8 Tf 0.5 0.2 0.2 rg 270 661 Td (Acres Burned) Tj ET
+BT /F2 8 Tf 0.5 0.2 0.2 rg 360 661 Td (Smoke Index) Tj ET
+BT /F2 8 Tf 0.5 0.2 0.2 rg 450 661 Td (Wildfire Aug-Oct Penalty) Tj ET
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 641 Td (2017) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 641 Td (Tubbs & Thomas Fires) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 641 Td (1,381,405) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 641 Td (7.8 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 641 Td (+34.2 AQI Spike) Tj ET
+q
+0.99 0.98 0.98 rg
+36 623 540 14 re
+f
+Q
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 626 Td (2018) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 626 Td (Camp Fire \(Paradise\) & Mendocino Complex) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 626 Td (1,893,913) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 626 Td (8.9 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 626 Td (+57.6 AQI Spike) Tj ET
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 611 Td (2019) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 611 Td (Kincade & Saddle Ridge Fires) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 611 Td (277,998) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 611 Td (4.2 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 611 Td (+14.5 AQI Spike) Tj ET
+q
+0.99 0.98 0.98 rg
+36 593 540 14 re
+f
+Q
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 596 Td (2020) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 596 Td (August Complex & Creek Fire \(Orange Sky\)) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 596 Td (4,397,809) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 596 Td (9.8 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 596 Td (+88.3 AQI Spike \(Record\)) Tj ET
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 581 Td (2021) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 581 Td (Dixie & Caldor Fires) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 581 Td (2,568,941) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 581 Td (8.9 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 581 Td (+48.2 AQI Spike) Tj ET
+q
+0.99 0.98 0.98 rg
+36 563 540 14 re
+f
+Q
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 566 Td (2022) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 566 Td (McKinney & Mosquito Fires) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 566 Td (362,455) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 566 Td (6.4 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 566 Td (+22.4 AQI Spike) Tj ET
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 551 Td (2023) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 551 Td (Atmospheric River Year \(Low Fire Activity\)) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 551 Td (324,917) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 551 Td (4.8 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 551 Td (+8.2 AQI \(Cleanest Year\)) Tj ET
+q
+0.99 0.98 0.98 rg
+36 533 540 14 re
+f
+Q
+BT /F2 7.5 Tf 0.2 0.2 0.2 rg 46 536 Td (2024) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 90 536 Td (Park Fire & Southern CA Heat Episodes) Tj ET
+BT /F1 7.5 Tf 0.2 0.2 0.2 rg 270 536 Td (1,042,000) Tj ET
+BT /F2 7.5 Tf 0.8 0.3 0.1 rg 360 536 Td (8.4 / 10) Tj ET
+BT /F2 7.5 Tf 0.9 0.15 0.15 rg 450 536 Td (+41.6 AQI Spike) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 495 Td (5. SEASONAL REGIMES: INVERSIONS VS. PHOTOCHEMICAL SMOG) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 487 m 576 487 l S Q
+q
+0.85 0.9 0.95 RG
+1 w
+0.98 0.99 1 rg
+36 325 260 140 re
+B
+Q
+BT /F2 9.5 Tf 0.1 0.4 0.7 rg 46 445 Td (WINTER REGIME \(NOV - FEB\)) Tj ET
+BT /F2 8 Tf 0.2 0.2 0.2 rg 46 429 Td (Primary Hazard: Fine Particulate Matter \(PM2.5\)) Tj ET
+BT /F1 7.5 Tf 0.3 0.35 0.4 rg 46 413 Td (" Mechanism: Radiational cooling creates a cold layer) Tj ET
+BT /F1 7.5 Tf 0.3 0.35 0.4 rg 46 400 Td (  of dense air trapped on the valley floor under warm air.) Tj ET
+BT /F1 7.5 Tf 0.3 0.35 0.4 rg 46 387 Td (" Stagnation: Prevents vertical dispersal of agricultural dust,) Tj ET
+BT /F1 7.5 Tf 0.3 0.35 0.4 rg 46 374 Td (  diesel exhaust, and residential wood burning smoke.) Tj ET
+BT /F1 7.5 Tf 0.3 0.35 0.4 rg 46 361 Td (" Impacted Basins: Fresno, Kern, and Sacramento Valleys) Tj ET
+BT /F1 7.5 Tf 0.3 0.35 0.4 rg 46 348 Td (  exceed federal standards for weeks at a time.) Tj ET
+q
+0.95 0.9 0.85 RG
+1 w
+1 0.99 0.98 rg
+316 325 260 140 re
+B
+Q
+BT /F2 9.5 Tf 0.8 0.4 0.1 rg 326 445 Td (SUMMER REGIME \(MAY - SEP\)) Tj ET
+BT /F2 8 Tf 0.2 0.2 0.2 rg 326 429 Td (Primary Hazard: Ground-Level Ozone \(O3\)) Tj ET
+BT /F1 7.5 Tf 0.4 0.35 0.3 rg 326 413 Td (" Mechanism: Intense solar UV radiation reacts with NOx) Tj ET
+BT /F1 7.5 Tf 0.4 0.35 0.3 rg 326 400 Td (  and Volatile Organic Compounds \(VOCs\) under high heat.) Tj ET
+BT /F1 7.5 Tf 0.4 0.35 0.3 rg 326 387 Td (" Transport: Westerly sea breezes carry Los Angeles basin) Tj ET
+BT /F1 7.5 Tf 0.4 0.35 0.3 rg 326 374 Td (  emissions inland, pooling against the San Bernardino mtns.) Tj ET
+BT /F1 7.5 Tf 0.4 0.35 0.3 rg 326 361 Td (" Impacted Basins: Riverside and San Bernardino record) Tj ET
+BT /F1 7.5 Tf 0.4 0.35 0.3 rg 326 348 Td (  the highest Ozone exceedance counts in the nation.) Tj ET
+BT /F2 10 Tf 0.08 0.16 0.32 rg 36 305 Td (STATEWIDE EPA CATEGORY PROPORTION \(2015-2024\)) Tj ET
+q
+0.8 0.8 0.8 RG
+1 w
+0.95 0.95 0.95 rg
+36 275 540 20 re
+B
+Q
+q
+0.06 0.72 0.5 rg
+36 275 245 20 re
+f
+Q
+q
+0.96 0.62 0.04 rg
+281 275 227 20 re
+f
+Q
+q
+0.98 0.45 0.09 rg
+508 275 46 20 re
+f
+Q
+q
+0.94 0.27 0.27 rg
+554 275 17 20 re
+f
+Q
+q
+0.55 0 0.15 rg
+571 275 5 20 re
+f
+Q
+BT /F2 7.5 Tf 0.06 0.72 0.5 rg 50 258 Td (Good \(45.4%\)) Tj ET
+BT /F2 7.5 Tf 0.96 0.62 0.04 rg 220 258 Td (Moderate \(42.1%\)) Tj ET
+BT /F2 7.5 Tf 0.98 0.45 0.09 rg 440 258 Td (USG \(8.5%\)) Tj ET
+BT /F2 7.5 Tf 0.94 0.27 0.27 rg 480 245 Td (Unhealthy & Hazardous \(4.0%\)) Tj ET
+
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 5885 >>
+stream
+q
+0.06 0.09 0.16 rg
+0 752 612 40 re
+f
+Q
+BT /F2 9 Tf 0.22 0.74 0.97 rg 36 768 Td (CALIFORNIA AIR QUALITY ANALYSIS \(2015-2024\)) Tj ET
+BT /F1 9 Tf 0.7 0.75 0.8 rg 530 768 Td (Page 4 of 4) Tj ET
+q 0.22 0.74 0.97 RG 2 w 0 752 m 612 752 l S Q
+q 0.85 0.88 0.92 RG 1 w 36 36 m 576 36 l S Q
+BT /F1 8 Tf 0.5 0.55 0.6 rg 36 24 Td (Technical Documentation & Environmental Case Study  |  EPA AirData & CARB Analytics) Tj ET
+BT /F1 8 Tf 0.5 0.55 0.6 rg 530 24 Td (MIT License) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 725 Td (6. ADVANCED SQL QUERY SUITE \(10 QUERIES IN sql/analysis_queries.sql\)) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 717 m 576 717 l S Q
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 676 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 688 Td (Q1: Worst Counties Per Year) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 688 Td (Syntax: CTEs + DENSE_RANK\(\) OVER \(PARTITION BY year ORDER BY mean_aqi DESC\)) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 678 Td (Result: Identifies Kern, Fresno, and Riverside as the chronic top 3 annually.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 650 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 662 Td (Q2: Seasonal Air Dynamics) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 662 Td (Syntax: Multi-variable GROUP BY + CASE meteorological seasons) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 652 Td (Result: Proves winter PM2.5 dominance \(68%\) vs summer Ozone dominance \(61%\).) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 624 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 636 Td (Q3: 30-Day Rolling AQI for LA) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 636 Td (Syntax: Window Frame: ROWS BETWEEN 29 PRECEDING AND CURRENT ROW) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 626 Td (Result: Smooths high day-to-day noise to reveal long-term seasonal oscillations.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 598 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 610 Td (Q4: YoY Growth in Clean Days) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 610 Td (Syntax: Window Function: LAG\(good_days\) OVER \(PARTITION BY county\)) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 600 Td (Result: Tracks year-over-year clean air gains, highlighting the 2023 atmospheric rivers.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 572 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 584 Td (Q5: Wildfire Smoke Penalty) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 584 Td (Syntax: Self-JOIN on county & year comparing Aug-Oct vs Nov-Jul) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 574 Td (Result: Quantifies acute smoke penalty \(+88.3 AQI in Fresno during 2020 fires\).) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 546 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 558 Td (Q6: Island & Gap Streak Detection) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 558 Td (Syntax: Double ROW_NUMBER\(\) window difference to group contiguous days) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 548 Td (Result: Discovers longest continuous unhealthy air spells in Central Valley history.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 520 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 532 Td (Q7: Decadal Trajectory Shift) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 532 Td (Syntax: Self-JOIN comparing 2015 baseline rank vs 2024 recent rank) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 522 Td (Result: Evaluates which counties structurally improved vs degraded over 10 years.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 494 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 506 Td (Q8: Dominant Pollutant Regime) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 506 Td (Syntax: Pivot share aggregation: SUM\(CASE WHEN param = "PM2.5"\)) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 496 Td (Result: Classifies counties into Particulate Traps vs Photochemical Smog regimes.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 468 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 480 Td (Q9: Outlier Smoke Anomaly Check) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 480 Td (Syntax: Window functions AVG\(\) & STDDEV\(\) calculating z-score >= 2.5) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 470 Td (Result: Isolates catastrophic acute smoke plume arrivals with statistical rigor.) Tj ET
+q
+0.88 0.9 0.94 RG
+0.6 w
+1 1 1 rg
+36 442 540 22 re
+B
+Q
+BT /F2 8 Tf 0.08 0.25 0.55 rg 44 454 Td (Q10: County Vulnerability Index) Tj ET
+BT /F3 7.5 Tf 0.4 0.4 0.4 rg 175 454 Td (Syntax: Weighted composite index: \(Mean * 0.4\) + \(% Unhealthy * 0.4\)) Tj ET
+BT /F1 7.5 Tf 0.25 0.28 0.32 rg 44 444 Td (Result: Produces statewide risk ranking: Kern #1 \(86.4\), Humboldt #15 \(28.5\).) Tj ET
+BT /F2 12 Tf 0.08 0.16 0.32 rg 36 428 Td (7. POWER BI ARCHITECTURE & PUBLIC POLICY RECOMMENDATIONS) Tj ET
+q 0.22 0.74 0.97 RG 1 w 36 420 m 576 420 l S Q
+BT /F1 8.5 Tf 0.2 0.22 0.26 rg 36 404 Td (" Power BI Star Schema: FactAQIDaily is connected to DimDate, DimCounty, and DimEPAThresholds. Includes 9 custom DAX) Tj ET
+BT /F1 8.5 Tf 0.2 0.22 0.26 rg 36 391 Td (  measures including 30-Day Rolling AQI, Wildfire Smoke Penalty, and dynamic HEX code conditional formatting.) Tj ET
+BT /F1 8.5 Tf 0.2 0.22 0.26 rg 36 378 Td (" Environmental Policy Takeaways: Targeted agricultural burn bans and wood-burning restrictions in Fresno and Kern have) Tj ET
+BT /F1 8.5 Tf 0.2 0.22 0.26 rg 36 365 Td (  measurably reduced baseline winter stagnation, but prescribed burn forest management and early-alert HVAC air filtration) Tj ET
+BT /F1 8.5 Tf 0.2 0.22 0.26 rg 36 352 Td (  infrastructure are vital to safeguard public health against late-summer wildfire smoke super-episodes.) Tj ET
+q
+0.85 0.9 0.95 RG
+1 w
+0.96 0.98 1 rg
+36 294 540 45 re
+B
+Q
+BT /F2 9 Tf 0.08 0.25 0.55 rg 46 323 Td (GITHUB REPOSITORY & PROJECT DELIVERABLES) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 46 311 Td (Complete project repository containing clean data, Jupyter notebooks, MySQL scripts, and Power BI models ready for deploy.) Tj ET
+BT /F2 8 Tf 0.1 0.6 0.3 rg 46 300 Td (Repository Package: california-air-analysis.zip  |  Status: Verified & Production Ready) Tj ET
+
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000141 00000 n 
+0000000211 00000 n 
+0000000286 00000 n 
+0000000364 00000 n 
+0000000510 00000 n 
+0000005698 00000 n 
+0000005844 00000 n 
+0000013641 00000 n 
+0000013789 00000 n 
+0000020424 00000 n 
+0000020572 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+26510
+%%EOF

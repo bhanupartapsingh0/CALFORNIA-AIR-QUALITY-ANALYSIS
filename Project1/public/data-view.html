@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Explorer - California Air Quality Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .data-table-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    th {
+      text-align: left;
+      padding: 12px 14px;
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-secondary);
+      border-bottom: 2px solid #334155;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+    }
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    tr:hover td {
+      background: rgba(51, 65, 85, 0.4);
+    }
+    .search-input {
+      padding: 8px 14px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand-container">
+      <span class="brand-icon">🌲</span>
+      <div>
+        <h1 class="brand-title">California Air Quality - Data Explorer</h1>
+        <p class="brand-subtitle">Station Level Telemetry, Geo-Coordinates & Historical CSV Exports</p>
+      </div>
+    </div>
+    <div class="nav-badges">
+      <a href="index.html" class="btn btn-secondary" style="font-size: 0.8rem; text-decoration: none;">← Back to Dashboard</a>
+      <a href="/api/export/historical.csv" download class="btn" style="font-size: 0.8rem; text-decoration: none;">📥 Download Historical CSV</a>
+      <a href="/api/export/stations.csv" download class="btn btn-secondary" style="font-size: 0.8rem; text-decoration: none;">📥 Download Stations CSV</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <h2 style="font-size: 1.4rem; font-weight: 700;">California Monitoring Station Registry</h2>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 4px;">
+          Direct telemetry from California Air Resources Board (CARB) and EPA Air Quality System (AQS).
+        </p>
+      </div>
+      <div>
+        <input type="text" id="table-search" class="search-input" placeholder="🔍 Search station, county, or basin...">
+      </div>
+    </div>
+
+    <div class="data-table-container">
+      <table id="stations-data-table">
+        <thead>
+          <tr>
+            <th>Station ID (AQS)</th>
+            <th>Station Name</th>
+            <th>County</th>
+            <th>Air Basin</th>
+            <th>Latitude / Longitude</th>
+            <th>Elevation</th>
+            <th>Latest AQI</th>
+            <th>PM2.5 (µg/m³)</th>
+            <th>Ozone (ppm)</th>
+            <th>NO₂ (ppb)</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Populated dynamically via JS -->
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>California Air Quality Analysis System &bull; Open Environmental Data Infrastructure</p>
+  </footer>
+
+  <script>
+    async function loadStations() {
+      try {
+        const res = await fetch('/api/stations');
+        const data = await res.json();
+        renderTable(data);
+
+        document.getElementById('table-search').addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase();
+          const filtered = data.filter(s => 
+            s.name.toLowerCase().includes(q) ||
+            s.county.toLowerCase().includes(q) ||
+            s.basin.toLowerCase().includes(q) ||
+            s.id.toLowerCase().includes(q)
+          );
+          renderTable(filtered);
+        });
+      } catch (err) {
+        console.error('Failed to load stations:', err);
+      }
+    }
+
+    function renderTable(stations) {
+      const tbody = document.getElementById('table-body');
+      tbody.innerHTML = stations.map(s => `
+        <tr>
+          <td><code style="color: #38bdf8;">${s.id}</code></td>
+          <td style="font-weight: 600;">${s.name}</td>
+          <td>${s.county}</td>
+          <td><span style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem;">${s.basin}</span></td>
+          <td>${s.lat.toFixed(4)}, ${s.lon.toFixed(4)}</td>
+          <td>${s.elevation_m} m</td>
+          <td>
+            <span style="font-weight: 700; color: ${s.details ? s.details.color : '#fff'};">
+              ${s.composite_aqi || 'N/A'}
+            </span>
+          </td>
+          <td>${s.pm25_ugm3 != null ? s.pm25_ugm3 + ' µg/m³' : 'N/A'}</td>
+          <td>${s.ozone_ppm != null ? s.ozone_ppm + ' ppm' : 'N/A'}</td>
+          <td>${s.no2_ppb != null ? s.no2_ppb + ' ppb' : 'N/A'}</td>
+          <td>
+            <span style="display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; background: ${s.details ? s.details.color + '22' : '#333'}; color: ${s.details ? s.details.color : '#fff'};">
+              ${s.details ? s.details.category : s.aqi_category || 'N/A'}
+            </span>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    loadStations();
+  </script>
+</body>
+</html>

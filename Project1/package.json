@@ -1,0 +1,28 @@
+{
+  "name": "california-air-analysis",
+  "version": "1.0.0",
+  "description": "Comprehensive California Air Quality & Atmospheric Pollution Analysis across CARB Air Basins",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node data/seed_data.js",
+    "test": "node --test tests/test_aqi.js",
+    "cli": "node cli.js",
+    "cli:summary": "node cli.js summary",
+    "cli:wildfire": "node cli.js wildfire",
+    "cli:basins": "node cli.js basins"
+  },
+  "keywords": [
+    "california",
+    "air-quality",
+    "aqi",
+    "pm25",
+    "ozone",
+    "carb",
+    "epa",
+    "wildfire",
+    "environmental-data"
+  ],
+  "author": "Antigravity Data Science Team",
+  "license": "MIT"
+}

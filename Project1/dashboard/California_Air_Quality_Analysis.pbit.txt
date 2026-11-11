@@ -1,0 +1,9 @@
+# Power BI Template Placeholder
+Project: California Air Quality Analysis (2015-2024)
+Target File: California_Air_Quality_Analysis.pbix
+
+To build and save the .pbix file:
+1. Follow the step-by-step instructions in dashboard/README.md.
+2. Load data/processed/ca_aqi_clean.csv.
+3. Import DAX measures.
+4. Save file as California_Air_Quality_Analysis.pbix in this directory.

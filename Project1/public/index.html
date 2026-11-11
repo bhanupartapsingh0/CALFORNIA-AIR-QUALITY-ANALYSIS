@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California Air Quality & Pollution Analysis Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Leaflet CSS for California Spatial Mapping -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- Chart.js for High Performance Environmental Analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="brand-container">
+      <span class="brand-icon">🌲</span>
+      <div>
+        <h1 class="brand-title">California Air Quality Analysis</h1>
+        <p class="brand-subtitle">CARB Air Basins, EPA Breakpoints & Wildfire Atmospheric Impact Study</p>
+      </div>
+    </div>
+    <div class="nav-badges">
+      <div class="badge-live">
+        <span class="pulse-dot"></span>
+        <span id="live-status-text">CARB Network Active</span>
+      </div>
+      <a href="data-view.html" class="btn btn-secondary" style="font-size: 0.8rem; text-decoration: none;">📋 Data Explorer</a>
+      <a href="/api/export/historical.csv" download class="btn" style="font-size: 0.8rem; text-decoration: none;">📥 Export CSV</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- Top Filter Bar -->
+    <section class="filter-bar">
+      <div class="filter-group">
+        <label for="basin-select" class="filter-label">Air Basin:</label>
+        <select id="basin-select">
+          <option value="All">All California Basins (Statewide)</option>
+          <option value="South Coast">South Coast (Los Angeles, Orange, Riverside)</option>
+          <option value="San Joaquin Valley">San Joaquin Valley (Fresno, Bakersfield)</option>
+          <option value="San Francisco Bay Area">San Francisco Bay Area</option>
+          <option value="Sacramento Valley">Sacramento Valley (Sacramento, Chico)</option>
+          <option value="San Diego County">San Diego County</option>
+          <option value="North Coast">North Coast (Eureka, Humboldt)</option>
+          <option value="Salton Sea">Salton Sea / Imperial Valley</option>
+          <option value="Great Basin Valleys">Great Basin (Mammoth Lakes)</option>
+          <option value="Monterey Bay">Monterey Bay (Salinas)</option>
+          <option value="Lake Tahoe">Lake Tahoe</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="pollutant-select" class="filter-label">Pollutant Layer:</label>
+        <select id="pollutant-select">
+          <option value="composite_aqi">Composite AQI (EPA Standard)</option>
+          <option value="pm25_ugm3">PM2.5 (Fine Particulate Matter)</option>
+          <option value="ozone_ppm">Ozone O₃ (Photochemical Smog)</option>
+          <option value="no2_ppb">NO₂ (Combustion / Traffic)</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="year-select" class="filter-label">Time Horizon:</label>
+        <select id="year-select">
+          <option value="All">Full Multi-Year Study (2021-2026)</option>
+          <option value="2026">2026 (Recent Observations)</option>
+          <option value="2025">2025 (Heatwave & Fire Season)</option>
+          <option value="2024">2024 (Park Fire Episode)</option>
+          <option value="2023">2023 (Atmospheric Rivers / Wet Winter)</option>
+          <option value="2022">2022 (Drought Period)</option>
+          <option value="2021">2021 (Dixie Fire Episode)</option>
+        </select>
+      </div>
+
+      <button id="btn-refresh" class="btn btn-secondary">🔄 Refresh View</button>
+    </section>
+
+    <!-- KPI Metric Cards -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Statewide Avg AQI</span>
+          <span class="kpi-icon">🌐</span>
+        </div>
+        <div class="kpi-value" id="kpi-avg-aqi" style="color: #f59e0b;">--</div>
+        <div class="kpi-caption" id="kpi-avg-category">Calculating...</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Most Impacted Basin</span>
+          <span class="kpi-icon">⚠️</span>
+        </div>
+        <div class="kpi-value" id="kpi-worst-basin" style="font-size: 1.5rem; color: #ef4444;">--</div>
+        <div class="kpi-caption" id="kpi-worst-basin-desc">Top winter inversion & smoke trap</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Pristine Baseline Basin</span>
+          <span class="kpi-icon">🍃</span>
+        </div>
+        <div class="kpi-value" id="kpi-cleanest-county" style="font-size: 1.5rem; color: #10b981;">--</div>
+        <div class="kpi-caption" id="kpi-cleanest-desc">Maritime marine boundary layer</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Primary Driver</span>
+          <span class="kpi-icon">🔬</span>
+        </div>
+        <div class="kpi-value" id="kpi-dominant-pollutant" style="font-size: 1.6rem; color: #38bdf8;">PM2.5</div>
+        <div class="kpi-caption">Wildfire smoke & valley stagnation</div>
+      </div>
+    </section>
+
+    <!-- California Spatial Map & Station List Panel -->
+    <section class="map-section">
+      <div class="map-container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <h2 style="font-size: 1.05rem; font-weight: 600;">🗺️ California CARB Monitoring Station Network</h2>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Click station marker for pollutant telemetry</span>
+        </div>
+        <div id="california-map"></div>
+      </div>
+
+      <div class="station-list-panel">
+        <div class="station-list-header">
+          <h2 style="font-size: 1.05rem; font-weight: 600;">📡 Active Station Rankings</h2>
+          <span id="station-count-badge" class="badge-live" style="font-size: 0.7rem;">0 Stations</span>
+        </div>
+        <div class="station-scroll-list" id="station-list-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics Charts Grid -->
+    <section class="charts-grid">
+      <!-- Historical Multi-Year Trend -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 class="chart-title">📈 Historical AQI & PM2.5 Trends (2021-2026)</h3>
+          <span style="font-size: 0.75rem; color: var(--text-secondary);">Monthly CARB Aggregates</span>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="historicalChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Air Basin Comparison -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 class="chart-title">📊 Air Basin Pollution Comparison</h3>
+          <span style="font-size: 0.75rem; color: var(--text-secondary);">Mean AQI vs Unhealthy Days</span>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="basinComparisonChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Wildfire Correlation -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 class="chart-title">🔥 Wildfire Acres Burned vs Smoke PM2.5 Spikes</h3>
+          <span style="font-size: 0.75rem; color: var(--text-secondary);">Atmospheric Fire Incident Study</span>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="wildfireChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Seasonal Dynamics -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 class="chart-title">❄️☀️ Seasonal Stagnation vs Photochemical Ozone</h3>
+          <span style="font-size: 0.75rem; color: var(--text-secondary);">Winter Inversion vs Summer Heat</span>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="seasonalChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Predictive Forecasting & EPA Calculator Tools -->
+    <section class="tools-grid">
+      
+      <!-- 7-Day Statistical Forecast -->
+      <div class="tool-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h3 style="font-size: 1.1rem; font-weight: 700;">🔮 7-Day Statistical AQI Forecast</h3>
+          <span style="font-size: 0.75rem; color: var(--accent-blue);">Double Exponential Smoothing</span>
+        </div>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px;">
+          Predicts atmospheric particulate dispersion and photochemical ozone rates for the active air basin.
+        </p>
+        <div class="forecast-list" id="forecast-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Interactive EPA AQI Calculator -->
+      <div class="tool-card">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">🧮 Interactive EPA AQI & Health Calculator</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 4px;">
+          Calculate official EPA AQI breakpoints and health guidelines based on sensor readings.
+        </p>
+
+        <div class="calc-inputs">
+          <div class="calc-input-group">
+            <label for="input-pm25">PM2.5 (µg/m³):</label>
+            <input type="number" id="input-pm25" value="28.4" step="0.5" min="0" max="500">
+          </div>
+          <div class="calc-input-group">
+            <label for="input-ozone">Ozone O₃ (ppm):</label>
+            <input type="number" id="input-ozone" value="0.048" step="0.005" min="0" max="0.6">
+          </div>
+          <div class="calc-input-group">
+            <label for="input-no2">NO₂ (ppb):</label>
+            <input type="number" id="input-no2" value="22" step="1" min="0" max="1000">
+          </div>
+        </div>
+
+        <div class="calc-result-box" id="calc-result-card">
+          <div class="calc-aqi-display">
+            <div class="calc-aqi-number" id="calc-aqi-val" style="color: #f59e0b;">85</div>
+            <div class="calc-category-text" id="calc-cat-text" style="color: #f59e0b;">Moderate</div>
+          </div>
+          <div class="calc-health-desc">
+            <div class="calc-advisory-title" id="calc-dominant-text">Dominant: PM2.5</div>
+            <p class="calc-advisory-text" id="calc-advisory-text">
+              Air quality is acceptable. Unusually sensitive individuals should consider limiting prolonged outdoor exertion.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>California Air Quality Analysis System &bull; CARB (California Air Resources Board) & EPA AQS Data Architecture</p>
+    <p style="margin-top: 6px; color: #475569;">Comprehensive environmental analytics, spatial mapping, and wildfire smoke modeling.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

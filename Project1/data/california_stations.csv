@@ -1,0 +1,26 @@
+station_id,station_name,county,air_basin,latitude,longitude,elevation_meters
+06-037-1103,"Los Angeles - N Main St","Los Angeles","South Coast",34.0665,-118.2268,87
+06-037-4004,"Long Beach - Webster St","Los Angeles","South Coast",33.7922,-118.2163,9
+06-059-0007,"Anaheim - Pampas Lane","Orange","South Coast",33.8306,-117.9383,48
+06-065-8001,"Riverside - Rubidoux","Riverside","South Coast",33.9996,-117.416,248
+06-071-0005,"San Bernardino - 4th St","San Bernardino","South Coast",34.1067,-117.2742,326
+06-019-0011,"Fresno - Garland","Fresno","San Joaquin Valley",36.7854,-119.7732,97
+06-029-0014,"Bakersfield - California Ave","Kern","San Joaquin Valley",35.3589,-119.0344,119
+06-099-0005,"Modesto - 14th St","Stanislaus","San Joaquin Valley",37.6422,-120.9942,27
+06-077-1002,"Stockton - Hazelton St","San Joaquin","San Joaquin Valley",37.9522,-121.269,6
+06-107-2002,"Visalia - N Church St","Tulare","San Joaquin Valley",36.3325,-119.2908,102
+06-075-0005,"San Francisco - Arkansas St","San Francisco","San Francisco Bay Area",37.7659,-122.399,18
+06-001-0009,"Oakland West - 7th St","Alameda","San Francisco Bay Area",37.8049,-122.2858,4
+06-085-0005,"San Jose - Jackson St","Santa Clara","San Francisco Bay Area",37.3486,-121.8949,21
+06-001-0007,"Berkeley - Aquatic Park","Alameda","San Francisco Bay Area",37.8571,-122.3015,3
+06-095-0004,"Vallejo - Tuolumne St","Solano","San Francisco Bay Area",38.1025,-122.238,15
+06-067-0010,"Sacramento - T Street","Sacramento","Sacramento Valley",38.5684,-121.4931,8
+06-061-0006,"Roseville - N Sunrise Blvd","Placer","Sacramento Valley",38.7483,-121.2644,51
+06-007-0008,"Chico - East 20th St","Butte","Sacramento Valley",39.7292,-121.8028,65
+06-073-1006,"San Diego - Perkins Ave","San Diego","San Diego County",32.6895,-117.1306,6
+06-073-0003,"El Cajon - Lexington Ave","San Diego","San Diego County",32.7915,-116.9638,132
+06-025-0005,"Calexico - East 5th St","Imperial","Salton Sea",32.6761,-115.4839,1
+06-023-1004,"Eureka - H Street","Humboldt","North Coast",40.7997,-124.1611,12
+06-051-0001,"Mammoth Lakes - Sierra Park","Mono","Great Basin Valleys",37.6497,-118.968,2398
+06-053-0002,"Salinas - Sanborn Rd","Monterey","Monterey Bay",36.6719,-121.6247,21
+06-017-0010,"South Lake Tahoe - Sandy Way","El Dorado","Lake Tahoe",38.9372,-119.9744,1904
